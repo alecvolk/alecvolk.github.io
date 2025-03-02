@@ -26,4 +26,4 @@ This website is a showcase of Alec Volk™’s achievements and ventures. All co
 
 ---
 
-> **"The best way to predict the future is to create it." – Alec Volk™**
+> **"Slow motion is no motion." – Alec Volk™**
