@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Biography</title>
+    <meta name="description" content="Your Name's biographical website">
+    <meta name="keywords" content="Your Name, biography, portfolio, work">
+    <meta name="author" content="Your Name">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,25 +26,96 @@
         .bio-section {
             margin-bottom: 2em;
         }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 0.5em 0 0.2em;
+        }
+        form input, form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 0.7em;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Your Name</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="content">
-        <div class="bio-section">
+        <div class="bio-section" id="about">
             <h2>About Me</h2>
             <p>Write about yourself here...</p>
         </div>
-        <div class="bio-section">
+        <div class="bio-section" id="work">
             <h2>My Work</h2>
             <p>Describe your work and projects here...</p>
         </div>
-        <div class="bio-section">
+        <div class="bio-section" id="contact">
             <h2>Contact</h2>
-            <p>Provide your contact information here...</p>
+            <form action="https://formspree.io/your-email@example.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>Follow me on <a href="https://twitter.com/yourusername">Twitter</a> and <a href="https://github.com/yourusername">GitHub</a>.</p>
+    </footer>
 </body>
 </html>
